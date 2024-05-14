@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User details card</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #main_container{
+            width:97%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            text-align: center;
+            gap:30px;
+            padding:20px;
+            background-color: rgb(160, 186, 221);
+        }
+       .card_cantainer{
+            width:100%;
+            height: auto;
+            transition: ease-in-out 1s;
+            border-radius: 10px 40px;
+            background-color:rgb(248, 248, 244);
+       }
+       .card_cantainer:hover{
+        cursor: pointer;
+        transform: scale(1.05);
+       }
+       .card_cantainer img{
+        width: 100%;
+        height: 350px;
+        border-radius: 10px 40px;
+       }
+       .card_cantainer button{
+        width: 30%;
+        margin-bottom: 10px;
+        height: 30px;
+        border-radius: 10px;
+        background-color: rgb(214, 98, 214);
+        color: white;
+       }
+       @media screen and (min-width:200px) and (max-width:468px) {
+        #main_container{
+            width:98%;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap:20px;
+            padding:13px;
+        }
+        .card_cantainer{
+            width:95%;
+       }
+       .card_cantainer:hover{
+        cursor: pointer;
+        transform: scale(1.04);
+       }
+       }
+       @media screen and (min-width:469px) and (max-width:880px) {
+        #main_container{
+            width:98%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap:20px;
+            padding:18px;
+        }
+        .card_cantainer{
+            width:95%;
+       }
+       .card_cantainer:hover{
+        cursor: pointer;
+        transform: scale(1.04);
+       }
+       }
+    </style>
+</head>
+<body>
+    <div id="main_container">
+
+    </div>
+</body>
+<script>
+    let card1 = document.createElement("div");
+    card1.classList.add("card_cantainer");
+    let image1 = document.createElement("img");
+        image1.src = "close-up-growing-beautiful-forest-in-glass-ball-and-flying.jpg" ;
+    let title1 = document.createElement("h1");
+        title1.innerText = "Forest-in-glass";  
+    let details1 = document.createElement("p");
+        details1.innerText = "Close-up growing beautiful forest in glass ball and flying butterflies in nature outdoors. Spring season concept."  ;
+    let btn1 = document.createElement("button");
+        btn1.innerText = "Know More " ; 
+    card1.append(image1,title1,details1,btn1);
+    let main_container = document.getElementById("main_container");
+    main_container.append(card1);
+   console.log("main_container");
+
+
+   let card2 = document.createElement("div")
+   card2.classList.add("card_cantainer")
+    let image2 = document.createElement("img")
+        image2.src = "beautiful-nature.webp" 
+    let title2 = document.createElement("h1")
+        title2.innerText = "beautiful-nature"  
+    let details2 = document.createElement("p")
+        details2.innerText = "Want to know where this information comes from nature outdoors. Spring season concept."  
+    let btn2 = document.createElement("button")
+        btn2.innerText = "Know More "  
+    card2.append(image2,title2,details2,btn2)
+    main_container.append(card2)
+
+
+    let card3 = document.createElement("div")
+   card3.classList.add("card_cantainer")
+    let image3 = document.createElement("img")
+        image3.src = "bird-thumbnail.jpg" 
+    let title3 = document.createElement("h1")
+        title3.innerText = "bird-thumbnail"  
+    let details3 = document.createElement("p")
+        details3.innerText = "When a person creates an original work, fixed in a tangible medium, he or she automatically owns copyright."  
+    let btn3 = document.createElement("button")
+        btn3.innerText = "Know More "  
+    card3.append(image3,title3,details3,btn3)
+    main_container.append(card3)
+
+
+    let card4 = document.createElement("div")
+   card4.classList.add("card_cantainer")
+    let image4 = document.createElement("img")
+        image4.src = "download (2).jpg" 
+    let title4 = document.createElement("h1")
+        title4.innerText = "Visual nature"  
+    let details4 = document.createElement("p")
+        details4.innerText = "Where can you find free images that are high quality and cleared to use for your blog posts or social media content."  
+    let btn4 = document.createElement("button")
+        btn4.innerText = "Know More "  
+    card4.append(image4,title4,details4,btn4)
+    main_container.append(card4)
+
+
+    let card5 = document.createElement("div")
+   card5.classList.add("card_cantainer")
+    let image5 = document.createElement("img")
+        image5.src = "free-nature.jpg" 
+    let title5 = document.createElement("h1")
+        title5.innerText = "free-nature"  
+    let details5 = document.createElement("p")
+        details5.innerText = "We created this free image pack to help you get started with your projects at no cost. If you need to customize."  
+    let btn5 = document.createElement("button")
+        btn5.innerText = "Know More "  
+    card5.append(image5,title5,details5,btn5)
+    main_container.append(card5)
+
+
+    let card6 = document.createElement("div")
+   card6.classList.add("card_cantainer")
+    let image6 = document.createElement("img")
+        image6.src = "download.jpg" 
+    let title6 = document.createElement("h1")
+        title6.innerText = " waterfall image"  
+    let details6 = document.createElement("p")
+        details6.innerText = "The waterfall has been known as the Angel Falls since the mid-20th century, they are named after Jimmie Angel."  
+    let btn6 = document.createElement("button")
+        btn6.innerText = "Know More "  
+    card6.append(image6,title6,details6,btn6)
+    main_container.append(card6)
+
+
+    let card7 = document.createElement("div")
+   card7.classList.add("card_cantainer")
+    let image7 = document.createElement("img")
+        image7.src = "MainBefore.webp" 
+    let title7 = document.createElement("h1")
+        title7.innerText = "MainBefore"  
+    let details7 = document.createElement("p")
+        details7.innerText = "Make every picture sharp and clear with one click increase image resolution and improve quality."  
+    let btn7 = document.createElement("button")
+        btn7.innerText = "Know More "  
+    card7.append(image7,title7,details7,btn7)
+    main_container.append(card7)
+
+
+    let card8 = document.createElement("div")
+   card8.classList.add("card_cantainer")
+    let image8 = document.createElement("img")
+        image8.src = "sunset.jpg" 
+    let title8 = document.createElement("h1")
+        title8.innerText = "sunset"  
+    let details8 = document.createElement("p")
+        details8.innerText = "Digital Source, credit, creator, and copyright info: Come from an image file, through a standard called the IPTC ."  
+    let btn8 = document.createElement("button")
+        btn8.innerText = "Know More "  
+    card8.append(image8,title8,details8,btn8)
+    main_container.append(card8)
+
+
+</script>
+</html>
